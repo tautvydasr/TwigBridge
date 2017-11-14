@@ -79,6 +79,14 @@ class Lint extends Command
     /**
      * {@inheritdoc}
      */
+    public function handle()
+    {
+        $this->fire();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function fire()
     {
         $this->twig = $this->laravel['twig'];

@@ -33,6 +33,14 @@ class Clean extends Command
     /**
      * {@inheritdoc}
      */
+    public function handle()
+    {
+        $this->fire();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function fire()
     {
         $twig     = $this->laravel['twig'];

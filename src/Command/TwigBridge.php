@@ -39,6 +39,16 @@ class TwigBridge extends Command
      *
      * @return void
      */
+    public function handle()
+    {
+        $this->fire();
+    }
+
+    /**
+     * Execute the console command.
+     *
+     * @return void
+     */
     public function fire()
     {
         $this->line('<info>Twig</info> version        <comment>'.Twig_Environment::VERSION.'</comment>');
